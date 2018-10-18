@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="demo_dog" model="shelter.animal.species">
+            <field name="name">Dog</field>
+        </record>
+        <record id="demo_cat" model="shelter.animal.species">
+            <field name="name">Cat</field>
+        </record>
+        <record id="demo_tiger" model="shelter.animal.species">
+            <field name="name">Tiger</field>
+        </record>
+        <record id="demo_tiger_bengal" model="shelter.animal.species.breed">
+            <field name="name">Bengal Tiger</field>
+            <field name="species_id" ref="shelter.demo_tiger"/>
+        </record>
+        <record id="demo_tiger_Siberian" model="shelter.animal.species.breed">
+            <field name="name">Siberian Tiger</field>
+            <field name="species_id" ref="shelter.demo_tiger"/>
+        </record>
+    </data>
+</odoo>
