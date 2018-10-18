@@ -16,6 +16,7 @@ class HrEmployee(models.Model):
                 if today_date.day == emp_birthdate.day and today_date.month == emp_birthdate.month:
                     template_id = self.env.ref('fl_birthday_wish.email_birthday_wishes_employee_template')
                     template_id.send_mail(employee.id, force_send=True)
+                    employee.message_post('Birthday message sent!')
         for partner in self.env['res.partner'].search([]):
             if partner.birthday:
                 cust_birthdate = datetime.strptime(str(partner.birthday), '%Y-%m-%d').date()
