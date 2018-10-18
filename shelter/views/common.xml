@@ -1,0 +1,7 @@
+<odoo>
+  <data>
+    <menuitem name="Shelter" id="shelter.menu" web_icon="shelter,static/description/icon.png"/>
+    <menuitem name="Patients" id="shelter.menu_patients" parent="shelter.menu"/>
+    <menuitem name="Configuration" id="shelter.menu_configuration" parent="shelter.menu"/>
+  </data>
+</odoo>
